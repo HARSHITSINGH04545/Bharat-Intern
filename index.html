@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!-- lets go..... -->
+ <div class="wrapper">
+<h1>WEATHER APP</h1>
+<div class="tab-container">
+    <p class="tab" data-userWeather >your Weather</p>
+    <p class="tab" data-searchWeather> Search Weather</p>
+
+</div>
+<div class="weather-container">
+    <!-- graing access page -->
+    <div class=" sub-container grant-location-container">
+        <div class="image">
+            <img src="./images/location1.png" width="100" height="100" loading="lazy" alt="">
+            
+        </div>
+        <!-- <img src="./images/location.jpg" width="100" height="100" loading="lazy" alt=""> -->
+        <p>Grant Location Access</p>
+        <p>Allow Access to get Location</p>
+        <button class="btn" data-grantAccess>Grant Location</button>
+    </div>
+
+<!-- search for Location  search form...-->
+<!-- <form class="form-container" data-searchContainer> -->
+    <form class="form-container" data-searchContainer>
+
+    <input type="text " placeholder="sercch for city.." data-searchInput>
+    <button class="btn" type="submit">
+        <!-- <img src="./images/searchimage1.png" alt="" width="30" height="30" loading="lazy" > -->
+        <i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>        </i>
+
+    </button>
+</form>
+
+<!--loading screen   -->
+<div class=" sub-container loading-container">
+    <!-- <img src="./images/loadinggif.webp" width="100" height="100" alt=""> -->
+    <!-- <img src="./images/loadinggif.webp" width="100" height="100" alt=""> -->
+    <img src="./images/loading2.gif" width="100" height="100" alt="">
+    <p>Loading</p>
+</div>
+
+<!-- show weather information on ui-->
+ <div class="sub-container user-info-conatiner">
+    <!-- ALL THESE THINGS UPDATED DYNAMICALLY BY GTH JS -->
+    <!-- city name and flag -->
+    <div class="name">
+        <p data-cityname></p>
+        <img src="" alt="" data-couontryIcon>
+    </div>
+    <!-- weatherc description -->
+    <p data-weatherDesc></p>
+
+    <!-- weather icon -->
+    <img src="" alt="" data-wreatherIcon>
+
+    <!-- temperature -->
+    <p data-temp></p>
+
+    <!-- 3cards parameters -->
+    <div class="parameters-container">
+<!-- card-1 -->
+<div class=" sub-container parameter" >
+    <img src="./images/windspeed.png"  width="5" height="5" alt="">
+    <p>Windspeed</p>
+    <p data-windSpeed></p>
+</div>
+<!-- \card-2 -->
+<div class="sub-container parameter">
+    <img src="./images/humidity.png"  width="5" height="5" alt="">
+    <p>humidity</p>
+    <p data-humidity></p>
+</div>
+<!-- card-3 -->
+<div class="sub-container parameter">
+    <img src="./images/cloud3.png" width="5" height="5" alt="">
+    <p>cloud</p>
+    <p data-cloud></p>
+</div>
+
+
+    </div>
+ </div>
+
+
+
+
+</div>
+
+
+ </div>
+    
+
+    <script src="index1.js"></script>
+   
+</body>
+</html>
